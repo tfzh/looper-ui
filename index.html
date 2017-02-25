@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Looper UI 轻量级响应式前端框架</title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  	<meta author="ulooper@aliyun.com">
+  	<link rel="stylesheet" type="text/css" href="looper-ui.css">
+</head>
+<style>
+	.header{
+		height: 200px;
+		text-align: center;
+	}
+	.header h1{
+		font-size: 48px;
+		padding-top: 48px;
+	}
+
+	.demo{
+		height: auto;
+	}
+	.demo button{
+		margin: 5px;
+	}
+	.demo .code{
+		word-break:break-all;
+		word-wrap: break-word;
+		height: auto;
+		min-height: 80px;
+		width: 100%;
+		margin: 5px;
+		background-color: rgb(39,40,34);
+		overflow: hidden;
+  		text-overflow:ellipsis; 
+  		border-radius: 0.5rem;
+  		font-size: 14px;
+	}
+	.mark{
+		color: #fff;
+	}
+	.tag{
+		color: rgb(249,38,114);
+	}
+	.class{
+		color: rgb(166,226,46);
+	}
+	.className{
+		color: rgb(230,219,116);
+	}
+/*	::-webkit-input-placeholder {  WebKit browsers  
+color: red; 
+} */
+input{
+	margin:  5px;
+}
+</style>
+<body>
+<header class="col_12 header">
+	<h1>Looper UI</h1>
+	<p>纯CSSweb页面组件库<br>Pure CSS Interface Kit | V0.1 update at 2017-2-25<a href="">完整版下载</a></p>	
+</header>
+<section class="col_xl_8 offset_xl_2 col_lg_10 offset_lg_1 col_12 padding">
+	<h1>按钮组<br>Buttons</h1>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button >默认default</button>         
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="mark">&gt;</span><span class="mark">默认default</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_info">提示info</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_info"</span><span class="mark">&gt;</span><span class="mark">提示info</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_warning">警告warning</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_warning"</span><span class="mark">&gt;</span><span class="mark">警告warning</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_error">错误error</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_error"</span><span class="mark">&gt;</span><span class="mark">错误error</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_success">成功success</button>           
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_success"</span><span class="mark">&gt;</span><span class="mark">成功success</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_success disabled">禁用disabled</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_success&nbsp;disabled"</span><span class="mark">&gt;</span><span class="mark">禁用disabled</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_outline">默认default</button>         
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_outline"</span><span class="mark">&gt;</span><span class="mark">默认default</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_outline_info">提示info</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_outline_info"</span><span class="mark">&gt;</span><span class="mark">提示info</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_outline_warning">警告warning</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_outline_warning"</span><span class="mark">&gt;</span><span class="mark">警告warning</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_outline_error">错误error</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_outline_error"</span><span class="mark">&gt;</span><span class="mark">错误error</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_outline_success">成功success</button>           
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_outline_success"</span><span class="mark">&gt;</span><span class="mark">成功success</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<button class="btn_outline_success disabled">禁用disabled</button>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">button</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"btn_outline_success&nbsp;disabled"</span><span class="mark">&gt;</span><span class="mark">禁用disabled</span><span class="mark">&lt;/</span><span class="tag">button</span><span class="mark">&gt;</span></span>
+	</div>
+</section>
+<section class="col_xl_8 offset_xl_2 col_lg_10 offset_lg_1 col_12 padding">
+	<h1>开关/切换<br>Switches/Toggles</h1>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>1.默认 swithch</p>
+		<input id="switch_default" type="checkbox" class="switch_default">
+        <label for="switch_default"><i></i></label>         
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_default"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_default"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_default"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>2.仿iOS swithch</p>
+		<input id="switch_iOS" type="checkbox" class="switch_iOS">
+        <label for="switch_iOS"><i></i></label>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_iOS"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_iOS"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_iOS"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>3.仿FlymeOS swithch</p>
+		<input id="FlymeOS swithch" type="checkbox" class="switch_FlymeOS">
+        <label for="FlymeOS swithch"><i></i></label>           
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_FlymeOS"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_FlymeOS"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_FlymeOS"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>4.仿MIUI swithch</p>
+		<input id="switch_MIUI" type="checkbox" class="switch_MIUI">
+        <label for="switch_MIUI"><i></i></label>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_MIUI"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_MIUI"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_MIUI"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>5.方块Diamond swithch</p>
+		<input id="switch_Diamond" type="checkbox" class="switch_Diamond">
+        <label for="switch_Diamond"><i></i></label>         
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_Diamond"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_Diamond"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_Diamond"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>6.椭圆Ellipse swithch</p>
+		<input id="switch_Ellipse" type="checkbox" class="switch_Ellipse">
+        <label for="switch_Ellipse"><i></i></label>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_Ellipse"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_Ellipse"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_Ellipse"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>7.多彩Color swithch</p>
+		<input id="switch_Color" type="checkbox" class="switch_Color">
+        <label for="switch_Color"><i></i></label>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_Color"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_Color"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_Color"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>8.渐变Gradient swithch</p>
+		<input id="switch_Gradient" type="checkbox" class="switch_Gradient">
+        <label for="switch_Gradient"><i></i></label>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_Gradient"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_Gradient"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_Gradient"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>9.文字Word swithch</p>
+		<input id="switch_Word" type="checkbox" class="switch_Word">
+        <label for="switch_Word"><i></i></label>            
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_Word"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_Word"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_Word"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+	<div class="col_xl_2 col_md_4 col_12 col_sm_6 demo">
+		<p>10.旋转Rotate swithch</p>
+		<input id="switch_Rotate" type="checkbox" class="switch_Rotate">
+        <label for="switch_Rotate"><i></i></label>         
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"switch_Rotate"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"switch_Rotate"</span><span class="mark">&gt;<br/></span><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"switch_Rotate"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">i</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span></span>
+	</div>
+</section>
+<section class="col_xl_8 offset_xl_2 col_lg_10 offset_lg_1 col_12 padding">
+	<h1>输入框<br>Input</h1>
+	<div class="col_xl_4 col_sm_6 demo">
+		<p>1.单选框 Radio</p>
+		<input id="radio_input" type="radio" class="radio_input" name="a" value="0">
+        <label for="radio_input"></label>
+        <input id="radio_input2" type="radio" class="radio_input" name="a" value="1">
+        <label for="radio_input2"></label>      
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"radio_input"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"radio"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"radio_input"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;value</span><span class="mark">=</span><span class="className">"0"</span><span class="mark">&gt;<br/><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"radio_input"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;<br/></span>
+		<span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"radio_input2"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"radio"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"radio_input"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;value</span><span class="mark">=</span><span class="className">"1"</span><span class="mark">&gt;<br/><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"radio_input2"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span>
+        </span>
+	</div>
+	<div class="col_xl_4 col_sm_6 demo">
+		<p>2.多选框 Checkbox</p>
+		<input id="checkbox_input" type="checkbox" class="checkbox_input"  name="a" value="1">
+        <label for="checkbox_input"></label>
+        <input id="checkbox_input2" type="checkbox" class="checkbox_input" name="a" value="2">
+        <label for="checkbox_input2"></label>    
+        <span class="code"><span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"checkbox_input"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"checkbox_input"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;value</span><span class="mark">=</span><span class="className">"0"</span><span class="mark">&gt;<br/><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"checkbox_input"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;<br/></span>
+		<span class="mark">&lt;</span><span class="tag">input</span><span class="class">&nbsp;id</span><span class="mark">=</span><span class="className">"checkbox_input2"</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"checkbox"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"checkbox_input"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;value</span><span class="mark">=</span><span class="className">"1"</span><span class="mark">&gt;<br/><span class="mark">&lt;</span><span class="tag">label</span><span class="class">&nbsp;for</span><span class="mark">=</span><span class="className">"checkbox_input2"</span><span class="mark">&gt;</span><span class="mark">&lt;/</span><span class="tag">label</span><span class="mark">&gt;</span>
+        </span>
+	</div>
+	<div class="col_xl_4 col_sm_6 demo">
+		<p>3.输入框 text_input</p>
+        <input type="text" name="a" class="text_input" placeholder="在这里输入内容Input something here...">
+         <span class="code"><span class="mark">&lt;</span><span class="tag">input&nbsp;</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"text"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"text_input"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;placeholder</span><span class="mark">=</span><span class="className">"在这里输入内容Input something here..."</span><span class="mark">&gt;<br/></span></span>
+	</div>
+	<div class="col_xl_4 col_sm_6 demo">
+		<p>4.输入框_警告 text_input input_warnning</p>
+        <input type="text" name="a" class="text_input input_warnning" placeholder="在这里输入内容Input something here...">
+         <span class="code"><span class="mark">&lt;</span><span class="tag">input&nbsp;</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"text"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"text_input&nbsp;input_warnning"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;placeholder</span><span class="mark">=</span><span class="className">"在这里输入内容Input something here..."</span><span class="mark">&gt;<br/></span></span>
+	</div>
+	<div class="col_xl_4 col_sm_6 demo">
+		<p>5.输入框_错误 text_input input_error</p>
+        <input type="text" name="a" class="text_input input_error" placeholder="在这里输入内容Input something here...">
+         <span class="code"><span class="mark">&lt;</span><span class="tag">input&nbsp;</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"text"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"text_input input_error"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;placeholder</span><span class="mark">=</span><span class="className">"在这里输入内容Input something here..."</span><span class="mark">&gt;<br/></span></span>
+	</div>
+	<div class="col_xl_4 col_sm_6 demo">
+		<p>6.输入框_成功 text_input input_success</p>
+        <input type="text" name="a" class="text_input input_success" placeholder="在这里输入内容Input something here...">
+         <span class="code"><span class="mark">&lt;</span><span class="tag">input&nbsp;</span><span class="class">&nbsp;type</span><span class="mark">=</span><span class="className">"text"</span><span class="class">&nbsp;class</span><span class="mark">=</span><span class="className">"text_input input_success"</span><span class="class">&nbsp;name</span><span class="mark">=</span><span class="className">"a"</span><span class="class">&nbsp;placeholder</span><span class="mark">=</span><span class="className">"在这里输入内容Input something here..."</span><span class="mark">&gt;<br/></span></span>
+	</div>
+
+</section>
+<section class="col_xl_8 offset_xl_2 col_lg_10 offset_lg_1 col_12 padding typo">
+	<h1>网格系统<br>Grid system</h1>
+	<p>参考了bootstrap的网格系统，将屏幕宽度分为12列，flex布局，彼此之间可以嵌套，可以偏移；<br/>
+	与bootstrap不同点：<br/>1.考虑到vue不支持'<strong>-</strong>'短横线命名类，故采用'<strong>_</strong>'短下划线命名类；<br/>
+	2.网格之间没有padding，分割区块更加精确；如有需要padding，建议自行添加；<br/>不区分屏幕大小时建议使用类<strong>.col_*</strong> 和<strong>.offset_*</strong>；</p>
+		<table>
+		  <thead>
+		  <tr>
+		    <th>\</th>
+		    <th>特小屏&lt;5765px</th>
+		    <th>576px&lt;小屏&lt;768px</th>
+		    <th>768px&lt;中屏&lt;992px</th>
+		    <th>992px&lt;大屏&lt;1200px</th>
+		    <th>1200px&lt;特大屏</th>
+		  </tr>
+		  </thead>
+		  <tbody>
+		  <tr>
+		    <td>类前缀</td>
+		    <td><strong>.col_xs_*<br/>.offset_xs_*</strong></td>
+		    <td><strong>.col_sm_*<br/>.offset_sm_*</strong></td>
+		    <td><strong>.col_md_*<br/>.offset_md_*</strong></td>
+		    <td><strong>.col_lg_*<br/>.offset_lg_*</strong></td>
+		    <td><strong>.col_xl_*<br/>.offset_xl_*</strong></td>
+		  </tr>
+		  </tbody>
+		</table>
+<a href="http://www.xiyoulive.com/looper-ui/looper-ui.css" download="text" id="biao1">下载</a>
+</section>
+</body>
+<script type="text/javascript">
+</script>
+</html>
